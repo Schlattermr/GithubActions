@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 
 namespace GithubActionsLab
 {
@@ -80,17 +81,14 @@ namespace GithubActionsLab
         {
             return double.Parse(x) / double.Parse(y);
         }
-
-        // Implement this method following a similar pattern as above
         public static double Power(string x, string y)
         {
-            double result = double.Parse(x);
-            int i = 0;
+            var result = double.Parse(x);
+            var i = 1;
             while(i < double.Parse(y)) {
                 result *= double.Parse(x);
                 i++;
             }
-
             return result;
         }
     }
