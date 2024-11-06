@@ -36,7 +36,7 @@ namespace GithubActionsLab
         {
             Assert.AreEqual(-1, Program.Subtract("1", "2"));
             Assert.AreEqual(1, Program.Subtract("3", "2"));
-            Assert.AreEqual(5, Program.Subtract("5", "5"));
+            Assert.AreEqual(0, Program.Subtract("5", "5"));
         }
     }
 }
